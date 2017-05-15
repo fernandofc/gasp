@@ -23,7 +23,6 @@
             app.params = {
                 UA: 'UA-XXXXX-Y',
                 debug: false,
-                namedTracker: 'send',
                 sendPageViewByHash: true,
                 sendHitMaxScrollHeight: true
             };
@@ -156,10 +155,10 @@
 
 
                 hits.send = function (category, action, label) {
-                    ga(app.params.namedTracker, 'event', category, action, label);
+                    ga('send', 'event', category, action, label);
                     label = label != null ? label : "";
                     if(app.params.debug)
-                      console.log("[" + app.name + " > hits] " + app.params.namedTracker + ": " + category + "|" + action + "|" + label);
+                      console.log("[" + app.name + " > hits] send: " + category + "|" + action + "|" + label);
                 }
             }
 

@@ -9,8 +9,8 @@ With just one line of javascript code, you can track your site with Google Analy
 ### Why use "gasp.js"?
 
 - Pageviews are sent automatically;
-- Event occurrences are sent according to the attributes entered in the html file
-- Scrolling height change occurrences are automatically sent as events (in percentage and quadrant)
+- Event occurrences are sent according to the attributes entered in the html file;
+- Scrolling height change occurrences are automatically sent as events (in percentage and quadrant);
 
 
 ----------
@@ -92,7 +92,7 @@ Simply enter the attributes "gasp-category", "gasp-action" and "gasp-label" in y
 ----------
 ## Page Tracking
 
-Sends automatically a pageview hit  to Google Analytics when there is a change in the hash of the URL
+Sends automatically a pageview hit  to Google Analytics when there is a change in the hash of the URL.
 
 
 > For example:
@@ -103,7 +103,7 @@ Sends automatically a pageview hit  to Google Analytics when there is a change i
 
 
 
- *For this it is necessary that "sendPageViewByHash" is true (default: true)*
+ *For this it is necessary that "sendPageViewByHash" is true (default: true).*
 
 
 ----------
@@ -118,7 +118,7 @@ Event with the maximum percentage and quadrant of the screen preview.
     
 
 > Example: If user rolled halfway through the screen:
-> - Category: [GASP.scroll]
+> - Category: [GASP.maxScroll]
 > - Action:quadrant2
 > - Label:50
 
@@ -127,7 +127,7 @@ Event with the maximum percentage and quadrant of the screen preview.
 > - Action:quadrant3
 > - Label:75
 
- *For this it is necessary that "sendHitMaxScrollHeight" is true (default: true)*
+ *For this it is necessary that "sendHitMaxScrollHeight" is true (default: true).*
 
 ----------
 ## Questions? Need help?

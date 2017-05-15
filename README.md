@@ -15,7 +15,7 @@ With just one line of javascript code, you can track your site with Google Analy
 
 ----------
 ## Installation
-1. include the javascript code on your page: ```<script src="js/gasp.js"></script>```
+1. include the javascript code on your page: ```<script src="gasp.js"></script>```
 2. initialize GASP: ```new GASP({ UA: "UA-XXXXX-Y"});```
 
 

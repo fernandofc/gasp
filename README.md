@@ -6,7 +6,6 @@ With just one line of javascript code, you can track your site with Google Analy
 - v0.1.0
 
 
-----------
 ### Why use "gasp.js"?
 
 - Pageviews are sent automatically;
@@ -15,7 +14,7 @@ With just one line of javascript code, you can track your site with Google Analy
 
 
 ----------
-### Installation
+## Installation
 1. include the javascript code on your page: ```<script src="js/gasp.js"></script>```
 2. initialize GASP: ```new GASP({ UA: "UA-XXXXX-Y"});```
 
@@ -33,7 +32,7 @@ With just one line of javascript code, you can track your site with Google Analy
 
 
 ----------
-### Event Tracking
+## Event Tracking
 
 Simply enter the attributes "gasp-category", "gasp-action" and "gasp-label" in your html.
  
@@ -91,7 +90,7 @@ Simply enter the attributes "gasp-category", "gasp-action" and "gasp-label" in y
 
 
 ----------
-### Page Tracking
+## Page Tracking
 
 Sends automatically a pageview hit  to Google Analytics when there is a change in the hash of the URL
 
@@ -109,7 +108,7 @@ Sends automatically a pageview hit  to Google Analytics when there is a change i
 
 ----------
 
-### Scroll Tracking
+## Scroll Tracking
 
 Event with the maximum percentage and quadrant of the screen preview.
 
@@ -131,5 +130,5 @@ Event with the maximum percentage and quadrant of the screen preview.
  *For this it is necessary that "sendHitMaxScrollHeight" is true (default: true)*
 
 ----------
-### Questions? Need help?
+## Questions? Need help?
 fernando@fernandofc.com.br

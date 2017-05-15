@@ -118,12 +118,12 @@ Event with the maximum percentage and quadrant of the screen preview.
     
 
 > Example: If user rolled halfway through the screen:
-> - Category: [GASP.maxScroll]
+> - Category: GASP.maxScroll
 > - Action:quadrant2
 > - Label:50
 
 > Example: if user rolled up 3/4 screen:
-> - Category: [GASP.scroll]
+> - Category: GASP.maxScroll
 > - Action:quadrant3
 > - Label:75
 

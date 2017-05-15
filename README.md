@@ -1,12 +1,12 @@
 # gasp.js
 With just one line of javascript code, you can track your site with Google Analytics. Simple and easy. Just insert attributes into html. GASP - Google Analytics for Single Page (or One Page)
 
-** **
+----------
 ### Version
 - v0.1.0
 
 
-** **
+----------
 ### Why use "gasp.js"?
 
 - Pageviews are sent automatically;
@@ -14,7 +14,7 @@ With just one line of javascript code, you can track your site with Google Analy
 - Scrolling height change occurrences are automatically sent as events (in percentage and quadrant)
 
 
-** **
+----------
 ### Installation
 1. include the javascript code on your page: ```<script src="js/gasp.js"></script>```
 2. initialize GASP: ```new GASP({ UA: "UA-XXXXX-Y"});```
@@ -32,10 +32,15 @@ With just one line of javascript code, you can track your site with Google Analy
 	**Example:** `new GASP({ UA: "UA-XXXXX-Y", debug: true, sendPageViewByHash: true, sendHitMaxScrollHeight: true });`
 
 
-** **
+----------
 ### Event Tracking
 
-**Informing the event fields: category, action and label**
+Simply enter the attributes "gasp-category", "gasp-action" and "gasp-label" in your html.
+ 
+ \o/
+ 
+
+-> **Informing the event fields: category, action and label**
 
     <ul class="menu">
 		<li>
@@ -52,7 +57,7 @@ With just one line of javascript code, you can track your site with Google Analy
 
 
 
-**No need to repeat "category"**
+-> **No need to repeat "category"**
 
     <ul class="menu" gasp-parent-category="header">
 		<li>
@@ -67,7 +72,7 @@ With just one line of javascript code, you can track your site with Google Analy
 		</li>
 	</ul>
 
-**"Label" is automatically the value of the tag**
+-> "**Label" is automatically the value of the tag**
 
     <div class="navbar" gasp-parent-category="header">
 		    <ul class="menu">
@@ -85,7 +90,7 @@ With just one line of javascript code, you can track your site with Google Analy
 	</div>
 
 
-** **
+----------
 ### Page Tracking
 
 Sends automatically a pageview hit  to Google Analytics when there is a change in the hash of the URL
@@ -101,7 +106,9 @@ Sends automatically a pageview hit  to Google Analytics when there is a change i
 
  *For this it is necessary that "sendPageViewByHash" is true (default: true)*
 
-** **
+
+----------
+
 ### Scroll Tracking
 
 Event with the maximum percentage and quadrant of the screen preview.
@@ -111,18 +118,18 @@ Event with the maximum percentage and quadrant of the screen preview.
 
     
 
-> **Example: If user rolled halfway through the screen:**
-> - **Category**: [GASP.scroll]
-> - **Action**:quadrant2
-> - **Label**:50
+> Example: If user rolled halfway through the screen:
+> - Category: [GASP.scroll]
+> - Action:quadrant2
+> - Label:50
 
-> **Example: if user rolled up 3/4 screen:**
-> - **Category**: [GASP.scroll]
-> - **Action**:quadrant3
-> - **Label**:75
+> Example: if user rolled up 3/4 screen:
+> - Category: [GASP.scroll]
+> - Action:quadrant3
+> - Label:75
 
  *For this it is necessary that "sendHitMaxScrollHeight" is true (default: true)*
 
-** **
+----------
 ### Questions? Need help?
 fernando@fernandofc.com.br
